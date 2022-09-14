@@ -9,9 +9,12 @@
 <body>
 <?php
 
-echo "stroka1";
-echo "stroka2";
+$ara = 9;
 
+echo $ara-8;
+echo $ara-6;
+echo $ara-5;
+echo $ara-2;
 
 ?>
 </body>
