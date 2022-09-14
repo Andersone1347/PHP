@@ -9,10 +9,11 @@
 <body>
 <?php
 
-echo "stroka1";
-echo "stroka2";
-
-
-?>
+if(is_int(25))
+    echo "число";
+    else
+    echo "не число";
+?> 
+ // число
 </body>
 </html>
