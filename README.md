@@ -54,3 +54,34 @@ echo date(DATE_RSS);
 **//**   **/* */**  **#** - Коментарии.
 
 ### Урок 4. Подключение файла.
+
+Разница между **include** и **require** заключается в том, что при подключении файла **PHP** первая инструкция позволяет продолжить выполнения скрипта, если не найден файл, а **require** завершает его, выводя фатальную ошибку.
+
+_index_
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= "Новая страница"; ?></title>
+</head>
+<body>
+<?php
+
+echo 'glav<br>';
+include 'second.php';
+echo 'glav<br>'
+
+?>
+</body>
+</html>
+```
+_second_
+```
+<?php
+echo 'double<br>';
+?>
+<h2>new</h2>
+```
