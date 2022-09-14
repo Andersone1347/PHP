@@ -9,9 +9,12 @@
 <body>
 <?php
 
-echo "stroka1";
-echo "stroka2";
+echo "true";
+echo "false";
 
+
+$var = 5;
+echo "Hello world! {$var}1";
 
 ?>
 </body>
