@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    dasda
+    <?php echo "lox"; ?>
 </body>
 </html>
