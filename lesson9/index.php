@@ -8,11 +8,14 @@
 </head>
 <body>
 <?php
-
-echo "stroka1";
-echo "stroka2";
-
-
-?>
+  $num = 1347;
+  $f = (float)($num/2) - (int)($num/2);
+    if($f){
+        echo 'нечет';
+    } else {
+        echo 'чёт';
+    }
+// нечёт
+?>  
 </body>
 </html>

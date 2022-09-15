@@ -9,9 +9,8 @@
 <body>
 <?php
 
-echo "stroka1";
-echo "stroka2";
-
+echo  '50' , '<br>'; 
+echo  "10";
 
 ?>
 </body>
