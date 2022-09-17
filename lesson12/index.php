@@ -9,8 +9,13 @@
 <body>
 <?php
 
-echo  '50' , '<br>'; 
-echo  "10";
+require 'point.php';
+
+$first = 5;
+$second = &$first;
+$second = 3;
+echo $first ,'<br>';
+echo $second;
 
 ?>
 </body>
