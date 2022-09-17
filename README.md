@@ -408,5 +408,51 @@ echo  "10";
 
 ## 02 Основы ООП
 
-### Урок 10. Классы и объекты.
+### Урок 1. Классы и объекты.
 
+**unset** — Удаляет переменную.
+
+В новом файле **point.php** создал класс **Point** с переменными **x** и **y**,  подключил к индексу и вывел через **echo** два объекта. Потом через **unset** удалил второй объект.
+_index_
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= "Новая страница"; ?></title>
+</head>
+<body>
+<?php
+    require 'point.php';
+
+    $point1 = new Point();
+    $point1->x = 13;
+    $point1->y = 17;
+    echo $point1->x , "<br>";
+
+    $point2 = new Point();
+    $point2->x = 12;
+    $point2->y = 47;
+    echo $point2->x , "<br>";
+
+    unset($point2);
+    echo $point2->x;
+?>
+</body>
+</html>
+```
+
+_point_
+```
+<?php
+class Point {
+    public $x;
+    public $y;
+}
+
+?>
+```
+
+### Урок 2. Области видимости переменных класса.
