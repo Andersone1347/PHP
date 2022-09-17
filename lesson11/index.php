@@ -8,11 +8,16 @@
 </head>
 <body>
 <?php
+    require 'point.php';
+    $point1 = new Point;
+    $point1->x = 13;
+    $point1->y = 17;
+    echo $point1->x'<br>';
 
-echo "stroka1";
-echo "stroka2";
-
-
+    $point2 = new Point;
+    $point2->x = 12;
+    $point2->y = 47;
+    echo $point2->x;
 ?>
 </body>
 </html>
