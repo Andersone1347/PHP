@@ -8,8 +8,8 @@
 </head>
 <body>
 <?php
-echo 'Имя файла ' . __FILE__ . '<br>'; Имя файла C:\OpenServer\domains\PHP\lesson14\index.php
-echo 'Строка ' . __LINE__ . '<br>'; Строка 12
+echo 'Имя файла ' . __FILE__ . '<br>';
+echo 'Строка ' . __LINE__ . '<br>';
 ?>
 </body>
 </html>

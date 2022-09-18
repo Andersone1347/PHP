@@ -9,9 +9,15 @@
 <body>
 <?php
 
-echo  '50' , '<br>'; 
-echo  "10";
-
+class cc {
+    const NAME = "str";
+}
+if(defined('cc::name')) {
+    echo "Константа определена";
+} else {
+   echo 'Константа не определена';
+}
+// Константа не определена
 ?>
 </body>
 </html>
