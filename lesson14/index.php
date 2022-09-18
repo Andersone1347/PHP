@@ -8,13 +8,8 @@
 </head>
 <body>
 <?php
-
-if(define('NUMBER', 1)) {
-    echo 'конста', '<br>';
-}
-if(defined('NUMBER')) {
-    echo 'Уже есть такая';
-}
+echo 'Имя файла ' . __FILE__ . '<br>'; Имя файла C:\OpenServer\domains\PHP\lesson14\index.php
+echo 'Строка ' . __LINE__ . '<br>'; Строка 12
 ?>
 </body>
 </html>
