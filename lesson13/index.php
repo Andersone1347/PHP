@@ -9,8 +9,19 @@
 <body>
 <?php
 
-echo  '50' , '<br>'; 
-echo  "10";
+require 'point.php';
+
+$p1 = new Point;
+$p1->x=10;
+$p1->y=34;
+
+$p2 = new Point;
+$p2->x=3;
+$p2->y=10;
+
+$dis = sqrt((pow(($p2->x-$p1->x),2)+pow(($p2->y-$p1->y),2))); 
+
+echo $dis;
 
 ?>
 </body>

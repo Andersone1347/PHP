@@ -9,9 +9,12 @@
 <body>
 <?php
 
-echo  '50' , '<br>'; 
-echo  "10";
-
+if(define('NUMBER', 1)) {
+    echo 'конста', '<br>';
+}
+if(defined('NUMBER')) {
+    echo 'Уже есть такая';
+}
 ?>
 </body>
 </html>

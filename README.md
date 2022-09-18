@@ -533,3 +533,109 @@ echo $second;
 ```
 
 ### Урок 3. Расстояние между двумя точками.
+
+Расмотрим ещё вариант клонирования объектов.
+```
+<?php
+
+require 'point.php';
+
+$first = new Point;
+$first->x=3;
+$first->y=3;
+
+$second = clone $first;
+$second->x=5;
+$second->y=5;
+
+echo "{$second->x}, {$second->y}<br>";
+echo "{$first->x}, {$first->y}";
+?>
+// 5,5
+   3,3 
+```
+**pow** — Возведение в степень.
+Пример
+```
+<?php
+
+var_dump(pow(2, 8)); // int(256)
+echo pow(-1, 20); // 1
+echo pow(0, 0); // 1
+echo pow(10, -1); // 0.1
+
+echo pow(-1, 5.5); // NAN
+?>
+```
+**sqrt** — Квадратный корень.
+```
+<?php
+// Точность зависит от ваших настроек точности
+echo sqrt(9); // 3
+echo sqrt(10); // 3.16227766 ...
+?>
+```
+Решим это уравнение в php.      
+![alt](/lesson13/1.png)
+
+```
+<?php
+
+require 'point.php';
+
+$p1 = new Point;
+$p1->x=10;
+$p1->y=34;
+
+$p2 = new Point;
+$p2->x=3;
+$p2->y=10;
+
+$dis = sqrt((pow(($p2->x-$p1->x),2)+pow(($p2->y-$p1->y),2))); 
+
+echo $dis;
+// 25
+?>
+```
+
+### Урок 4. Константы.
+
+**define** — Определяет именованную константу. [Подробное описание](https://www.php.net/manual/ru/function.define.php).     
+Пример
+```
+<?php
+define("CONSTANT", "Hello world.");
+echo CONSTANT; // выводит "Hello world."
+echo Constant; // выводит "Constant" и выдаёт уведомление.
+
+define("GREETING", "Hello you.", true);
+echo GREETING; // выводит "Hello you."
+echo Greeting; // выводит "Hello you."
+
+// Начиная с PHP 7
+define('ANIMALS', array(
+    'собака',
+    'кошка',
+    'птица'
+));
+echo ANIMALS[1]; // выводит "кошка"
+
+?>
+```
+
+**defined** — Проверяет существование указанной именованной константы.
+```
+<?php
+
+if(define('NUMBER', 1)) {
+    echo 'конста', '<br>';
+}
+if(defined('NUMBER')) {
+    echo 'Уже есть такая';
+}
+//конста
+  Уже есть такая
+?>
+```
+
+**constant** — Возвращает значение константы.
