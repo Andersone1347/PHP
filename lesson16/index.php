@@ -8,10 +8,10 @@
 </head>
 <body>
 <?php
-
-echo  '50' , '<br>'; 
-echo  "10";
-
+ $num = 7;
+ $num .= '+5';
+ echo 'lorem ' . $num , ' lorem';
+ // lorem 7+5 lorem
 ?>
 </body>
 </html>
