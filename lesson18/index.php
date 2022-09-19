@@ -8,10 +8,31 @@
 </head>
 <body>
 <?php
+$tests = array(
+    "42",
+    1347,
+    0x543,
+    02471,
+    0b10100111001,
+    1337e0,
+    "0x539",
+    "02471",
+    "0b10100111001",
+    "1337e0",
+    "not numeric",
+    array(),
+    9.1,
+    null,
+    '',
+);
 
-echo  '50' , '<br>'; 
-echo  "10";
-
+foreach ($tests as $element) {
+    if (is_numeric($element)) {
+        echo var_export($element, true) . " is число", PHP_EOL . "<br>";
+    } else {
+        echo var_export($element, true) . " is NOT число", PHP_EOL . "<br>" ;
+    }
+}
 ?>
 </body>
 </html>
