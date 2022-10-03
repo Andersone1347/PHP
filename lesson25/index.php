@@ -9,10 +9,9 @@
 <body>
 <?php
 
-$homepage = file_get_contents('text.txt');
-$homepage .= "\nЕщё одна строчка";
-$date = date("Y-m-d");
-file_put_contents($date.'.txt',$homepage);
+echo  '50' , '<br>'; 
+echo  "10";
+
 ?>
 </body>
 </html>

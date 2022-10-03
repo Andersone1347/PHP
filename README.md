@@ -1000,3 +1000,135 @@ echo 'Bar';
 //Bar
 ?>
 ```
+### Урок 8. Переключатель switch.
+
+Оператор **switch** похож на ряд операторов **IF** с одинаковым условием. Во многих случаях вам может понадобиться сравнивать одну и ту же переменную (или выражение) с множеством различных значений и выполнять различные участки кода в зависимости от того, какое значение принимает эта переменная (или выражение). Это именно тот случай, для которого удобен оператор **switch**.
+
+Переписываем код из 5-го урока, через **switch**.
+
+```
+<?php
+
+$char = 'c#';
+if ($char == 'php') {
+    ?>
+    <h1>Язык пхп</h1>
+
+    <?php
+} elseif ($char == 'js') {
+?>
+<h1>js</h1>
+<?php
+} elseif ($char == 'c#') {
+    ?>
+    <h1>c#</h1>
+<?php
+} else {
+    ?>
+    <h1>no</h1>
+<?php
+}
+//c#
+?>
+```
+_Switch_
+
+```
+<?php
+
+$char = 'c++';
+switch($char){
+    case 'php':
+        ?>
+        <h1>Язык пхп</h1>
+        <?php
+        break;
+    case 'js';
+        ?>
+        <h1>js</h1>
+        <?php
+        break;
+    case 'c#';
+        ?>
+        <h1>c#</h1>
+        <?php
+        break;
+    default:
+        ?>
+        <h1>no</h1>
+<?php
+}
+?>
+```
+Перепишим ещё один код на мотив **switch**.
+
+```
+<?php
+$n = 120;
+if ($n > 0 && $n <=10) {
+    echo "$n m 10 and b 0";
+} elseif ($n > 10 && $n <=100) {
+    echo "$n m 100 and b 10";
+} elseif ($n > 100 && $n <=1000) {
+    echo "$n m 1000 and b 100";
+} else{
+    echo "$n b 1000 or m 0";
+}
+// 120 m 1000 and b 100
+?>
+```
+_Switch_
+
+```
+<?php
+$n = 90;
+switch(true) {
+    case ($n > 0 && $n <= 10):
+        echo "$n m 10 and b 0";
+        break;
+        case ($n > 10 && $n <= 100):
+            echo "$n m 100 and b 10";
+            break;
+            case ($n > 0 && $n <= 10):
+                echo "$n m 1000 and b 100";
+                break;
+                default: 
+                    echo "$n b 1000 or m 0";
+                    break;                          
+}
+?>
+```
+
+### Урок 9. Чтение из файла и запись в файл.
+
+file_get_contents — Читает содержимое файла в строку.[подробно...](https://www.php.net/manual/ru/function.file-get-contents.php)
+```
+<?php
+
+$homepage = file_get_contents('text.txt');
+echo $homepage;
+// (написанное в text.txt)
+?>
+```
+
+file_put_contents — Пишет данные в файл.[подробно...](https://www.php.net/manual/ru/function.file-put-contents.php)
+```
+<?php
+
+$homepage = file_get_contents('text.txt');
+$homepage .= "\nЕщё одна строчка";
+file_put_contents('textNew.txt',$homepage);
+?>
+```
+Создадим файл с названием текущей даты.
+```
+<?php
+
+$homepage = file_get_contents('text.txt');
+$homepage .= "\nЕщё одна строчка";
+$date = date("Y-m-d");
+file_put_contents($date.'.txt',$homepage);
+?>
+```
+
+### Урок 10. Цикл while.
