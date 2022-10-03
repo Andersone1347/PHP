@@ -1184,6 +1184,6 @@ while($i <= 5) {
 
 ```
 
-**break** прерывает выполнение текущей структуры **for**, **foreach**, **while**, **do-while** или **switch**.
+**break** - прерывает выполнение текущей структуры **for**, **foreach**, **while**, **do-while** или **switch**.
 
 ### Урок 11. Цикл do while.
