@@ -9,8 +9,12 @@
 <body>
 <?php
 
-echo  '50' , '<br>'; 
-echo  "10";
+
+$i = 0;
+do {
+    echo "$i<br>";
+} while (++$i <= 5);
+
 
 ?>
 </body>
