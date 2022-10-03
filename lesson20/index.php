@@ -9,8 +9,7 @@
 <body>
 <?php
 
-echo  '50' , '<br>'; 
-echo  "10";
+
 
 ?>
 </body>

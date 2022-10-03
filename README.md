@@ -823,3 +823,5 @@ $a **= $b	$a = $a ** $b	Возведение в степень
 ### Урок 4. Операторы сравнения.
 ![alt](/lesson19/1.jpg)
 [Приоритет оператора](https://www.php.net/manual/ru/language.operators.precedence.php)
+
+### Урок 5. Условный оператор if.
