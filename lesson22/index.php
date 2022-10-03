@@ -9,9 +9,14 @@
 <body>
 <?php
 
-echo  '50' , '<br>'; 
-echo  "10";
+// $x = -250;
+// $x = $x < 0 ? -$x : $x;
+// echo $x;
 
+$y = 5;
+$y = $y ?? 1;
+echo $y;
+//5
 ?>
 </body>
 </html>
