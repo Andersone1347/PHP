@@ -9,8 +9,26 @@
 <body>
 <?php
 
+$char = 'c#';
+if ($char == 'php') {
+    ?>
+    <h1>Язык пхп</h1>
 
-
+    <?php
+} elseif ($char == 'js') {
+?>
+<h1>js</h1>
+<?php
+} elseif ($char == 'c#') {
+    ?>
+    <h1>c#</h1>
+<?php
+} else {
+    ?>
+    <h1>no</h1>
+<?php
+}
+//c#
 ?>
 </body>
 </html>
