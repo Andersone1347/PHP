@@ -9,9 +9,17 @@
 <body>
 <?php
 
-echo  '50' , '<br>'; 
-echo  "10";
-
+$i = 0;
+while($i <= 5) {
+    $i++;
+    if($i < 4) continue;
+    if($i > 5) break;
+    echo "$i<br>";
+}
+//4
+5
 ?>
+
+
 </body>
 </html>
