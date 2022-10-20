@@ -67,18 +67,52 @@ echo  $p;
 //0.5
 ?> -->
 
-<?php
-// P=2(a+b)
+<!-- <?php
+
 $a = 5;
 $b = 10;
-$p = 2*($a+$b);
-echo $p."<br>";
-$d = ($a*2 + $b*2)**2;
-echo $d;
-// 30
-// 900
+$q = $a+$b;
+$w = $a-$b;
+$e = $a*$b;
+$r = $a/$b;
+echo $q."<br>";
+echo $w."<br>";
+echo $e."<br>";
+echo $r."<br>";
+// 
+// 15
+// -5
+// 50
+// 0.5
+?> -->
+
+<!-- <?php
+$a = 5;
+$b = 10;
+if($a>$b)
+echo $a." больше"."<br>";
+else
+echo $b." больше"."<br>";
+
+if($a<$b)
+echo $a." меньше"."<br>";
+else
+echo $b." меньше"."<br>";
+
+
+?> -->
+<?php
+$k=5;
+$izkvm= floor($k*(1000/3600));
+$m=10;
+if ($izkvm>$m){
+echo $izkvm;
+}
+else{
+    echo $m;
+}
+
 ?>
-
-
+//10
 </body>
 </html>

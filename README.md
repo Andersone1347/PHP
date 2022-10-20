@@ -1358,5 +1358,64 @@ echo $d;
 
 3.5
 ```
+<?php
 
+$a = 5;
+$b = 10;
+$q = $a+$b;
+$w = $a-$b;
+$e = $a*$b;
+$r = $a/$b;
+echo $q."<br>";
+echo $w."<br>";
+echo $e."<br>";
+echo $r."<br>";
+// 
+15
+-5
+50
+0.5
+?>
+```
+3.6
+```
+<?php
+$cm = 560;
+$m = $cm/100;
+echo floor($m);
+?>
+```
+3.7
+```
+<?php
+$a = 5;
+$b = 10;
+if($a>$b)
+echo $a." больше"."<br>";
+else
+echo $b." больше"."<br>";
+
+if($a<$b)
+echo $a." меньше"."<br>";
+else
+echo $b." меньше"."<br>";
+
+
+?>
+```
+3.8
+```
+<?php
+$k=5;
+$izkvm= floor($k*(1000/3600));
+$m=10;
+if ($izkvm>$m){
+echo $izkvm;
+}
+else{
+    echo $m;
+}
+
+?>
+//10
 ```
